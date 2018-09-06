@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# TODO: Some things don't get parsed correctly, for instance: Shrimp lacks LEMON, Spinach lacks CHEESE
+# TODO: AVOID keyword (!? in Sorrel for example)
+
 import ebooklib
 from ebooklib import epub
 
