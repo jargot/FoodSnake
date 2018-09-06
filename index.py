@@ -47,10 +47,14 @@ def jump_to_next_ingredient_header(curr_el):
     if len(curr_el.contents) > 3:
         # TODO: Handle this, but for now, SKIP
         #  print "====================== MULTIPLE DETECTED"
+        # pass?
         None
     curr_el = curr_el.findNext()
     while is_ingredient_header(curr_el) is False:
         curr_el = curr_el.findNext()
+        if curr_el is None:
+            # Reached end of chapter
+           return None 
     next_el = curr_el
     return next_el
 
@@ -98,45 +102,21 @@ def parse_single_flavors(ingredient_header):
                     single_flavors['BOLD'].append(text)
             else:
                 single_flavors['bold'].append(text)
-            #  print cursor
         cursor = cursor.findNext()
-        #  print single_flavors
 
 def parse_flavor_affinities(ingredient_header):
     print "TODO: Flavor affinities"
     #  return
 
+ingredients_list = {}
 for x in book_html_gen:
     html = book_html_gen.next()
-    if "chap-3" in html.get_name():
+    if "OEBPS/Text/FlavorBible_chap-3a.html" in html.get_name():
         soup = BeautifulSoup(html.get_content(), 'html.parser')
         ingredientHeader = jump_to_first_ingredient_header(soup)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-        #  print ingredientHeader 
-        #  single_flavors = parse_single_flavors(ingredientHeader)
-        #  print single_flavors
-        #  flavor_affinities = parse_flavor_affinities(ingredientHeader)
-        ingredients_list = {}
         while ingredientHeader:
             ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-            print ingredientHeader.get_text()
+            if ingredientHeader is None:
+                break
             ingredients_list[ingredientHeader.get_text()] = { 'single_flavors': parse_single_flavors(ingredientHeader) }
-            #  ingredients_list.append({ 'name': ingredientHeader.get_text(), 'single_flavors': parse_single_flavors(ingredientHeader)})
             # TODO: Parse "Flavor Affinities"
-            # TODO ...
-
-print 'KEYS', ingredients_list.keys()
