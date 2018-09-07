@@ -17,5 +17,5 @@ ingredients_list = parse_book()
 STAR_BOLD_flavors = extract_flavors(ingredients_list, '*BOLD')
 BOLD_flavors = extract_flavors(ingredients_list, 'BOLD')
 
-generate_flavor_cards(BOLD_flavors, 'BOLD')
+generate_flavor_cards(BOLD_flavors, 'BOLD') # Why is the filename not in caps?
 generate_flavor_cards(STAR_BOLD_flavors, '*BOLD')

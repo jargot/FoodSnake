@@ -91,7 +91,6 @@ def parse_book():
 
     for item in book.get_items():
         if item.get_name().find('chap-3') != -1:
-            print 'Go', item.get_name()
             soup = BeautifulSoup(item.get_content(), 'html.parser')
             ingredientHeader = jump_to_first_ingredient_header(soup)
             while ingredientHeader:
