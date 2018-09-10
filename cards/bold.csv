@@ -1,5 +1,6 @@
 LENTILS	Bay Leaf<Br>Carrots<Br>Celery<Br>Garlic<Br>Oil<Br>Salmon<Br>Vinegar
 MUSHROOMS — PORCINI / CEPES / KING BOLETE	Oil, Porcini<Br>Olive Oil
+APRICOTS — IN GENERAL	Almonds<Br>Cream And Ice Cream<Br>Lemon:<Br>Sugar:
 KALE	Garlic
 SALMON (See also Fish — In General)	Butter<Br>Chives<Br>Cream, Heavy<Br>Garlic<Br>Lemon:<Br>Lentils<Br>Lime:<Br>Mustard:<Br>Oil:<Br>Olive Oil<Br>Onions,<Br>Potatoes<Br>Shallots<Br>Stocks:<Br>Thyme<Br>Tomatoes<Br>Vinegar<Br>Wine
 VANILLA	Chocolate<Br>Coffee<Br>Cream And Ice Cream<Br>Desserts<Br>Sugar
@@ -82,18 +83,17 @@ ENDIVE	Cheese:<Br>Oil:<Br>Olive Oil<Br>Vinegar:<Br>Walnuts
 THYME	Bay Leaf<Br>Cheese: Fresh, Goat<Br>Fish<Br>Mushrooms<Br>Onions<Br>Potatoes<Br>Rosemary<Br>Savory<Br>Soups,<Br>Stews<Br>Tomatoes
 BASS, STRIPED Weight: medium	Oil:<Br>Pepper: Black, Green, White<Br>Salt: Kosher, Sea<Br>Vinegar:
 PLUMS, DRIED (aka prunes)	Walnuts<Br>Wine
+
+  ALMONDS	Butter, Unsalted<Br>Chocolate: Dark, Milk<Br>Cream<Br>Honey<Br>Vanilla
 SHELLFISH (See also Crab, Lobster, Scallops, Shrimp, etc.)	Lemon
 BEANS, WHITE (e.g., Cannellini, Navy)	Garlic<Br>Oil,<Br>Olive Oil<Br>Onions<Br>Parsley, Flat-Leaf<Br>Pepper:<Br>Salt: Kosher, Sea<Br>Savory
 PINEAPPLES	Bananas<Br>Coconut:<Br>Mangoes<Br>Rum<Br>Vanilla
 COD	Butter<Br>Parsley, Flat-Leaf<Br>Vinegar
 PHEASANT	Garlic<Br>Potatoes<Br>Thyme
 ORANGES — IN GENERAL	Mint
-WALNUT OIL (See Oil, Walnut) WALNUTS (See also Nuts — In General)	Apples<Br>Endive<Br>Honey<Br>Pears<Br>Prunes
 MUSSELS	Clams<Br>Cream<Br>Garlic<Br>Lemon<Br>Olive Oil<Br>Onions<Br>Parsley:<Br>Pepper<Br>Saffron<Br>Salt<Br>Shallots<Br>Thyme<Br>Tomatoes
 COD, SALT	Garlic<Br>Oil
 TEX-MEX CUISINE (See Mexican Cuisine, Southwestern Cuisine) THAI CUISINE	Chile Peppers
-ASIAN CUISINE (See Chinese, Japanese, Vietnamese, etc. Cuisines)
-  ASPARAGUS	Butter, Unsalted<Br>Eggs And Egg Dishes<Br>Lemon: Juice, Zest<Br>Olive Oil<Br>Pepper: Black, White<Br>Salt: Kosher, Sea
 LAMB — IN GENERAL	White<Br>Flageolets<Br>Lemon:<Br>Oil:<Br>Onions:<Br>Salt:<Br>Thyme, Fresh
 CHEESE, ROQUEFORT	Sauternes
 COCONUT AND COCONUT MILK	Cream And Ice Cream<Br>Sugar<Br>Vanilla
@@ -127,8 +127,6 @@ CLAMS	Bacon<Br>Butter, Unsalted<Br>Chile Peppers,<Br>Garlic<Br>Olive Oil<Br>Pars
 BANANAS	Caramel<Br>Chocolate:<Br>Coconut And Coconut Milk<Br>Cream And Ice Cream<Br>Lemon, Juice<Br>Rum<Br>Sugar: Brown, White
 RUM	Lemon: Juice<Br>Lime: Juice<Br>Orange: Juice<Br>Spices<Br>Sugar, Esp. Brown
 SAKE	Japanese Cuisine
-ALMOND OIL (See Oil, Almond)
-  ALMONDS	Butter, Unsalted<Br>Chocolate: Dark, Milk<Br>Cream<Br>Honey<Br>Vanilla
 NUTMEG	Cheese (Esp. Ricotta) And Cheese Dishes<Br>Cream / Milk<Br>Desserts<Br>Eggnog<Br>Mace<Br>Rice<Br>Spinach
 EGGPLANT	Cheese<Br>Garlic<Br>Lemon<Br>Olive Oil<Br>Onions<Br>Parsley, Flat-Leaf<Br>Pepper: Black, White<Br>Salt<Br>Tomatoes,<Br>Vinegar
 CRAB, SOFT-SHELL	Lemon, Juice<Br>Oil<Br>Pepper<Br>Salt
@@ -152,9 +150,11 @@ VODKA	Lemon, Juice<Br>Russian Cuisine
 CAULIFLOWER	Cheese<Br>Cream And Milk<Br>Garlic<Br>Oil<Br>Onions:<Br>Pepper: Black, White<Br>Salt: Kosher, Sea
 LIVER, CALF’S	Onions<Br>Vinegar
 ANISE, STAR	Chinese Cuisine<Br>Five-Spice Powder
-APRICOTS — IN GENERAL	Almonds<Br>Cream And Ice Cream<Br>Lemon:<Br>Sugar:
+
+  ASPARAGUS	Butter, Unsalted<Br>Eggs And Egg Dishes<Br>Lemon: Juice, Zest<Br>Olive Oil<Br>Pepper: Black, White<Br>Salt: Kosher, Sea
 CHEESE, MANCHEGO	Almonds
 ONIONS — IN GENERAL	Butter, Unsalted<Br>Nutmeg<Br>Oil<Br>Salt<Br>Thyme
+ WALNUTS 	Apples<Br>Endive<Br>Honey<Br>Pears<Br>Prunes
 LOBSTER	Garlic<Br>Oil:<Br>Salt:<Br>Tomatoes:<Br>Vinegar:
 CINNAMON	Apples: Cider, Fruit, Juice<Br>Chocolate / Cocoa<Br>Custards<Br>Desserts
 PASTA	Cheese:<Br>Italian Cuisine<Br>Olive Oil,<Br>Sauces:
@@ -165,8 +165,6 @@ BEEF — OXTAILS	Onions<Br>Wine, Red
 BASIL (See also Basil, Thai, and Lemon Basil)	Eggs And Egg Dishes<Br>Italian Cuisine<Br>Olive Oil<Br>Pasta Dishes And Sauces<Br>Pesto<Br>Zucchini
 PEARS	Caramel<Br>Cinnamon<Br>Cloves<Br>Honey<Br>Lemon: Juice, Zest<Br>Mascarpone<Br>Orange:<Br>Vanilla<Br>Vinegar:<Br>Walnuts
 CUCUMBERS	Dill<Br>Garlic<Br>Mint<Br>Onions<Br>Vinegar<Br>Yogurt
-AVOCADO OIL (See Oil, Avocado)
-  AVOCADOS	Lime, Juice<Br>Salt: Kosher, Sea<Br>Vinegar:
 TUNA	Chile Peppers<Br>Chives<Br>Cilantro<Br>Garlic<Br>Ginger<Br>Lemon<Br>Oil<Br>Onions<Br>Parsley<Br>Salt<Br>Scallions<Br>Soy Sauce<Br>Thyme<Br>Tomatoes<Br>Vinegar
 CELERY ROOT	Lemon, Juice<Br>Mayonnaise<Br>Mustard, Dijon<Br>Potatoes, Esp. Mashed
 BELGIAN CUISINE	Potatoes: Fried,
@@ -180,5 +178,7 @@ KAFFIR LIMES AND KAFFIR LIME LEAF (See also Lemons, Limes, etc.)	Thai Cuisine
 SKATE	Capers<Br>Oil:<Br>Olive Oil<Br>Vinegar:
 ZUCCHINI (See also Summer Squash)	Basil<Br>Cheese:<Br>Ricotta<Br>Eggplant<Br>Garlic<Br>Olive Oil<Br>Onions,<Br>Parsley, Flat-Leaf<Br>Pepper: Black, White<Br>Salt: Kosher, Sea<Br>Thyme<Br>Tomatoes
 CRAB	Chives<Br>Lemon:<Br>Mayonnaise<Br>Oil:<Br>Onions:<Br>Parsley, Flat-Leaf<Br>Salt:<Br>Shrimp<Br>Tomatoes
+
+  AVOCADOS	Lime, Juice<Br>Salt: Kosher, Sea<Br>Vinegar:
 VEAL — IN GENERAL	Garlic<Br>Lemon:<Br>Mushrooms:<Br>Oil:<Br>Onions,<Br>Pepper:<Br>Salt:<Br>Stocks:<Br>Tomatoes:<Br>Wine, Dry White
 SQUASH, ACORN (See also Pumpkin; Squash, Butternut; and Squash, Winter)	Sage

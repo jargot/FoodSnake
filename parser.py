@@ -23,11 +23,6 @@ def is_ingredient_header(curr_el):
     return True
 
 def jump_to_next_ingredient_header(curr_el):
-    if len(curr_el.contents) > 3:
-        # TODO: Handle this, but for now, SKIP
-        #  print "====================== MULTIPLE DETECTED"
-        # pass?
-        None
     curr_el = curr_el.findNext()
     while is_ingredient_header(curr_el) is False:
         curr_el = curr_el.findNext()
@@ -85,6 +80,19 @@ def parse_flavor_affinities(ingredient_header):
     print "TODO: Flavor affinities"
     #  return
 
+def get_correct_ingredient_text_from_header(curr_el):
+    if len(curr_el.contents) > 3:
+        el_str = curr_el.strings
+        item = curr_el.strings.next() 
+        last_caps = ""
+        for item in curr_el.strings:
+            if item.istitle and item.find('(') == -1:
+                last_caps = item
+            pass
+        if item.istitle and item.find(')') == -1:
+            return item
+        return last_caps
+    return curr_el.get_text()
 
 def parse_book():
     ingredients_list = {}
@@ -97,32 +105,12 @@ def parse_book():
                 ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
                 if ingredientHeader is None:
                     break
-                ingredients_list[ingredientHeader.get_text()] = { 'single_flavors': parse_single_flavors(ingredientHeader) }
+                # TODO: Write a get_text() helper function that gets the right text... Header is actually correct! 
+                ingredients_list[get_correct_ingredient_text_from_header(ingredientHeader)] = { 'single_flavors': parse_single_flavors(ingredientHeader)}
+                #  ingredients_list[ingredientHeader.get_text()] = { 'single_flavors': parse_single_flavors(ingredientHeader) }
             # TODO: Parse "Flavor Affinities"
-        # TODO: Parse general data (Volume, Weight ...), not present in every ingredient
+            # TODO: Parse general data (Volume, Weight ...), not present in every ingredient
     return ingredients_list
-    #  for x in book_html_gen:
-    #      html = book_html_gen.next()
-    #      #  print html.get_name()
-    #      working_chapters = ["OEBPS/Text/FlavorBible_chap-3a.html", 'OEBPS/Text/FlavorBible_chap-3f.html', 'OEBPS/Text/FlavorBible_chap-3jkl.html', 'OEBPS/Text/FlavorBible_chap-3s.html', 'OEBPS/Text/FlavorBible_chap-3c_split_000.html', 'OEBPS/Text/FlavorBible_chap-3d.html', 'OEBPS/Text/FlavorBible_chap-3h.html', 'OEBPS/Text/FlavorBible_chap-3nop.html']
-    #      # TODO: Somehow it's missing 3t
-    #      debug_chapters = ['OEBPS/Text/FlavorBible_chap-3nop.html']
-
-    #      for chapter in working_chapters:
-    #          if chapter in html.get_name():
-    #              soup = BeautifulSoup(html.get_content(), 'html.parser')
-    #              with open('debug.log', 'a') as debug_file:
-    #                  debug_file.write(soup.encode('utf8'))
-    #              break
-    #              ingredientHeader = jump_to_first_ingredient_header(soup)
-    #              while ingredientHeader:
-    #                  ingredientHeader = jump_to_next_ingredient_header(ingredientHeader)
-    #                  if ingredientHeader is None:
-    #                      break
-    #                  ingredients_list[ingredientHeader.get_text()] = { 'single_flavors': parse_single_flavors(ingredientHeader) }
-    #              # TODO: Parse "Flavor Affinities"
-    #          # TODO: Parse general data (Volume, Weight ...), not present in every ingredient
-    #  return ingredients_list
 
 def extract_flavors(ingredients_list, flavor_type):
     flavors = {}
